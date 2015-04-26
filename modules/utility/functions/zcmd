@@ -1,0 +1,10 @@
+# zcmd lets you search for aliases quickly
+#
+# By andrew williams
+# https://github.com/skarfacegc
+
+
+function zcmd
+{
+  alias | grep $1 |awk -F= '{printf "%s\t%s\n", $1, $2}'
+}
