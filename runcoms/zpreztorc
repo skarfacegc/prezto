@@ -30,8 +30,8 @@ zstyle ':prezto:load' pmodule \
   'history' \
   'directory' \
   'spectrum' \
-  'utility' \
   'completion' \
+  'gnu-utility' \
   'git' \
   'homebrew' \
   'osx' \
@@ -40,6 +40,7 @@ zstyle ':prezto:load' pmodule \
   'sublimetext' \
   'ruby' \
   'syntax-highlighting' \
+  'utility' \
   'prompt'
 
 #
