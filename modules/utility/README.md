@@ -122,6 +122,7 @@ Functions
 
   - `slit` prints columns *1, 2, 3 ... n*.
   - `zcmd` search aliases for a string i.e. `zcmd git` to show all git aliases
+  - `psgrep` search ps output, with headers, trimmed to screen width
 
 ### Files and Directories
 
