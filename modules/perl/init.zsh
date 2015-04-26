@@ -31,6 +31,19 @@ if [[ "$OSTYPE" == darwin* ]]; then
   unset cache_file
 fi
 
+
+# Load up perlbrew
+if [ -e ~/perl5/perlbrew/etc/bashrc ]
+then
+        fpath=("${0:h}/." $fpath)
+
+	# Load and initialize the completion system ignoring insecure directories.
+	autoload -Uz compinit && compinit -i
+
+        source ~/perl5/perlbrew/etc/bashrc
+fi
+
+
 #
 # Aliases
 #
