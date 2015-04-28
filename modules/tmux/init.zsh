@@ -41,9 +41,16 @@ if [[ -z "$TMUX" && -z "$EMACS" && -z "$VIM" ]] && ( \
   exec tmux $_tmux_iterm_integration attach-session
 fi
 
+
+tmuxa() {
+  command tmux $_tmux_iterm_integration new-session -D -A -s "$1"
+}
+compdef -e 'words[1]=(tmux attach -t); service=tmux; (( CURRENT+=2 )); _tmux' tmuxa
+
+
 #
 # Aliases
 #
 
-alias tmuxa="tmux $_tmux_iterm_integration new-session -A"
+alias tmuxn='tmux $_tmux_iterm_integration new-session -s'
 alias tmuxl='tmux list-sessions'
