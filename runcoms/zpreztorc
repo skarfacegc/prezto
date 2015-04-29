@@ -38,9 +38,9 @@ zstyle ':prezto:load' pmodule \
   'perl' \
   'tmux' \
   'sublimetext' \
-  'ruby' \
   'syntax-highlighting' \
   'utility' \
+  'ruby' \
   'prompt'
 
 #
