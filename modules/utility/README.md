@@ -121,6 +121,7 @@ Functions
 ### General
 
   - `slit` prints columns *1, 2, 3 ... n*.
+  - `zinfo` shows various information about current environment (perl version, ruby versio, tmux sessions, docker sessions)
 
 ### Files and Directories
 
