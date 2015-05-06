@@ -40,6 +40,7 @@ zstyle ':prezto:load' pmodule \
   'node' \
   'sublimetext' \
   'syntax-highlighting' \
+  'history-substring-search' \
   'utility' \
   'docker' \
   'fasd' \
