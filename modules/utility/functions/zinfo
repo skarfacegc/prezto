@@ -13,15 +13,7 @@
 
 zinfo () {
     echo
-    echo -e "$FG[45]Perl: \t$FG[49]" `perlbrew use`
-    echo -e "$FG[45]Ruby: \t$FG[49]" `rvm use`
-    echo -e "$FG[45]Node: \t$FG[49]" `nvm current`
-    echo -e "$FG[45]Tmux: \t$FG[49]" $(tmux list-sessions -F '#{session_name}')
-    echo
-    echo -e "$FG[45]Docker: \t$FG[49]" `boot2docker status`
-    if [[ $(boot2docker status) == "running" ]]; then
-        docker ps -a
-    fi
-    echo
-
+    echo -e "$FG[45]Perl: \t$FG[49]" `which perl`
+    echo -e "$FG[45]Ruby: \t$FG[49]" `which ruby`
+    echo -e "$FG[45]Node: \t$FG[49]" `which node`
 }
